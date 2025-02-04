@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Assignment</title>
 </head>
 <body>
     <!-- Exercise One  -->
     <h3 id="text">I love JavaScript...</h3>
     <button type="button" onclick = "document.getElementById('text').style.fontSize='100px'">click Here </button>
+    
 
-    <h3 id="txt">I enjoy HTML and JavaScript</h3>
-    <button type="button" onclick = "document.getElementById('txt').style.display='none'">Tap Here </button>
+    <h4 id="txt"> Tapping this to show it and to hide it when tapping the buttons.</h4><br>
+    <button type="button" onclick="document.getElementById('txt').style.display='block'"> Show it</button>
+    <button type="button" onclick = "document.getElementById('txt').style.display='none'">Hide it </button>
 
     <!-- Exercise Two -->
 
@@ -22,30 +24,16 @@
      <!-- Trying on change -->
      <p>Enter something here</p>
      <input type="text" name="txt" value="Hey" onchange="myFunction(this.value)">
-     <script>
-        function myFunction(val) {
-            alert ("To change the name type: " + val);
-        }
-     </script>
 
      <!-- Trying on submit -->
       <p>Please submit this form.</p>
       <form action="" onsubmit="myFunc"> Type your name:<input type="text" name="fname">
     <input type="submit" value="submit"></form>
-    <script>
-        function myFunc (){
-            alert("Form submitted");
-        }
-    </script>
-
+    
     <!-- Trying Windows alert -->
      <h4>The Windows alert</h4>
      <button onclick="mine()"> Tap This</button>
-     <script>
-        function mine(){
-            alert("finally alerted");
-        }
-     </script>
+
      <!-- Outputs -->
      <p id="output">The sum</p>
      <script>
@@ -59,5 +47,32 @@
         let z = x+y;
         document.getElementById('vary').innerHTML = ("The value of z is " + z) 
      </script>
+
+     <!-- Trying on change -->
+     <script>
+        function myFunction(val) {
+            alert ("To change the name type: " + val);
+        }
+     </script>
+     <!-- Trying on submit -->
+     <script>
+        function myFunc (){
+            alert("Form submitted");
+        }
+    </script>
+    <!-- Trying Windows alert -->
+    <script>
+        function mine(){
+            alert("finally alerted");
+        }
+     </script>
+
+     <!-- Trying on write -->
+     <h3>Describing the .write</h3>
+     <button type="button" onclick="document.write('On clicking this button everything disappears')">Don't tap this</button> 
+      <!-- On clicking the button everything disappears due to the .write effect -->
+     
+
+
 </body>
 </html>
